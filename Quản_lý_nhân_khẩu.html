@@ -1,0 +1,224 @@
+<style>
+    .household-management {
+      background-color: rgba(52, 211, 219, 0.12);
+      display: flex;
+      max-width: 480px;
+      width: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 1px solid #000;
+    }
+    
+    .header {
+      align-self: start;
+      display: flex;
+      gap: 14px;
+      color: #000;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .header-icon {
+      aspect-ratio: 1.11;
+      object-fit: contain;
+      object-position: center;
+      width: 50px;
+    }
+    
+    .header-title {
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    
+    .main-content {
+      display: flex;
+      margin-top: 88px;
+      width: 100%;
+      flex-direction: column;
+      align-items: start;
+      padding: 0 14px;
+    }
+    
+    .household-id-container {
+      border-radius: 8px;
+      background-color: rgba(24, 20, 20, 0.2);
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      margin-left: 13px;
+      width: 198px;
+      max-width: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      color: #000;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .household-id-inner {
+      border-radius: 8px;
+      background-color: rgba(24, 20, 20, 0.2);
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    
+    .household-id-content {
+      border-radius: 8px;
+      background-color: rgba(24, 20, 20, 0.2);
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: start;
+      padding: 17px 20px 0 18px;
+    }
+    
+    .household-id-text {
+      z-index: 10;
+    }
+    
+    .household-id-text-2 {
+      z-index: 10;
+      margin-top: -29px;
+    }
+    
+    .household-id-text-3 {
+      margin-top: -29px;
+    }
+    
+    .input-field {
+      border-radius: 8px;
+      background-color: rgba(24, 20, 20, 0.2);
+      display: flex;
+      width: 345px;
+      max-width: 100%;
+      height: 41px;
+      margin: 18px 0 0 11px;
+    }
+    
+    .rotated-field {
+      transform: rotate(3.141592653589793rad);
+      border-radius: 8px;
+      background-color: rgba(24, 20, 20, 0.2);
+      display: flex;
+      width: 190px;
+      height: 41px;
+      margin: 62px 0 0 13px;
+    }
+    
+    .wide-field {
+      border-radius: 8px;
+      background-color: rgba(24, 20, 20, 0.2);
+      display: flex;
+      width: 347px;
+      max-width: 100%;
+      height: 47px;
+      margin: 18px 0 0 13px;
+    }
+    
+    .address-field {
+      border-radius: 8px;
+      background-color: rgba(24, 20, 20, 0.2);
+      width: 157px;
+      max-width: 100%;
+      overflow: hidden;
+      color: #000;
+      margin: 57px 0 0 13px;
+      padding: 7px 27px;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .extra-wide-field {
+      border-radius: 8px;
+      background-color: rgba(24, 20, 20, 0.2);
+      display: flex;
+      margin-top: 38px;
+      width: 349px;
+      max-width: 100%;
+      height: 47px;
+    }
+    
+    .storage-list {
+      border-radius: 8px;
+      background-color: rgba(24, 20, 20, 0.2);
+      overflow: hidden;
+      color: #000;
+      margin: 70px 0 0 11px;
+      padding: 5px 16px;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .icon-container {
+      align-self: stretch;
+      display: flex;
+      margin-top: 161px;
+      align-items: flex-start;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    
+    .icon {
+      object-fit: contain;
+      object-position: center;
+    }
+    
+    .icon-1 {
+      aspect-ratio: 0.92;
+      width: 58px;
+      align-self: start;
+    }
+    
+    .icon-2 {
+      aspect-ratio: 1.14;
+      width: 72px;
+      align-self: start;
+    }
+    
+    .icon-3 {
+      aspect-ratio: 1.37;
+      width: 82px;
+      margin: auto 0;
+    }
+    
+    .icon-4 {
+      aspect-ratio: 1.05;
+      width: 63px;
+      margin: auto 0;
+    }
+    </style>
+    
+    <section class="household-management">
+      <header class="header">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1357b8fe9dfbeb24e5e85277a3b6717ad09fda07f7a06d7340ef47635f9070e?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="header-icon" alt="Household management icon" />
+        <h1 class="header-title">Quản lý Hộ Khẩu</h1>
+      </header>
+      
+      <main class="main-content">
+        <div class="household-id-container">
+          <div class="household-id-inner">
+            <div class="household-id-content">
+              <p class="household-id-text">ID hộ khẩu</p>
+              <p class="household-id-text-2">ID hộ khẩu</p>
+              <p class="household-id-text-3">ID hộ khẩu</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="input-field" tabindex="0" role="textbox" aria-label="Input field"></div>
+        <div class="rotated-field" tabindex="0" role="textbox" aria-label="Rotated input field"></div>
+        <div class="wide-field" tabindex="0" role="textbox" aria-label="Wide input field"></div>
+        
+        <div class="address-field" tabindex="0" role="textbox" aria-label="Address input">Địa chỉ</div>
+        
+        <div class="extra-wide-field" tabindex="0" role="textbox" aria-label="Extra wide input field"></div>
+        
+        <div class="storage-list" tabindex="0" role="list" aria-label="Storage list">Danh sách lưu trữ</div>
+        
+        <div class="icon-container">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/504dff57366b09627c6e5f6482fc0c1ed1ef9ba3cc7454afbebf4c65f4bdbdec?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="icon icon-1" alt="" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c9481f1e2e8e4136c1090db1785d5967f67b456e6fc468b1006fa5edb54a2bd?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="icon icon-2" alt="" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/762eada47d4b86850bcaa3d6dae98974d5eeeb04604495f3aa965ba31e5ccf21?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="icon icon-3" alt="" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/11623197ba71f2158128e40aaf9de1c32f1bee699a046e528422a1084f82eef4?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="icon icon-4" alt="" />
+        </div>
+      </main>
+    </section>

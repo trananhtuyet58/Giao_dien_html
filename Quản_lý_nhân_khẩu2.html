@@ -1,0 +1,166 @@
+<style>
+    .login-container {
+      background-color: rgba(52, 211, 219, 0.12);
+      display: flex;
+      max-width: 480px;
+      width: 100%;
+      padding: 0 0 8px;
+      flex-direction: column;
+      overflow: hidden;
+      color: #000;
+      margin: 0 auto;
+      font: 400 16px Inter, sans-serif;
+    }
+    
+    .header-image {
+      aspect-ratio: 1.55;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      margin-top: 25px;
+      width: 100%;
+      flex-direction: column;
+      align-items: start;
+      padding: 0 11px 0 53px;
+    }
+    
+    .title-wrapper {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 10;
+      border-radius: 50%;
+      align-self: center;
+      aspect-ratio: 5.28;
+      width: 264px;
+      max-width: 100%;
+      line-height: 44px;
+      padding: 11px 57px 0;
+    }
+    
+    .title-background {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .title-text {
+      position: relative;
+    }
+    
+    .input-field {
+      border-radius: 8px;
+      background-color: #d9d9d9;
+      margin-top: 29px;
+      width: 323px;
+      max-width: 100%;
+      height: 43px;
+    }
+    
+    .login-button {
+      border-radius: 8px;
+      background-color: #d9d9d9;
+      align-self: start;
+      padding: 5px 21px;
+      font-size: 12px;
+    }
+    
+    .register-button-wrapper {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-radius: 8px;
+      aspect-ratio: 4.385;
+      width: 114px;
+      padding: 6px 27px;
+    }
+    
+    .register-button-background {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .register-button-text {
+      position: relative;
+      font-size: 12px;
+    }
+    
+    .forgot-password {
+      border-radius: 8px;
+      background-color: #d9d9d9;
+      align-self: center;
+      margin-top: 52px;
+      width: 314px;
+      max-width: 100%;
+      font-size: 12px;
+      padding: 5px 70px;
+    }
+    
+    .footer-image {
+      aspect-ratio: 0.87;
+      object-fit: contain;
+      object-position: center;
+      width: 58px;
+      align-self: end;
+      margin-top: 52px;
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    
+    .button-container {
+      display: flex;
+      margin-top: 27px;
+      width: 100%;
+      max-width: 326px;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    </style>
+    
+    <section class="login-container">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b2d999f12ec4965044ec8787580ae9bae5ff7690fd57f6333c7cc8acde8a1a1?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="" class="header-image" />
+      <div class="content-wrapper">
+        <div class="title-wrapper">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e70e5f2df8408c5115f11e9f9c108bfb4c37ae531324e874378bc8abdde96455?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="" class="title-background" />
+          <h1 class="title-text">QUẢN LÝ HỘ KHẨU</h1>
+        </div>
+        <form>
+          <label for="username" class="visually-hidden">Tên Đăng Nhập</label>
+          <input type="text" id="username" class="input-field" placeholder="Tên Đăng Nhập" aria-label="Tên Đăng Nhập" />
+          
+          <label for="password" class="visually-hidden">Mật Khẩu</label>
+          <input type="password" id="password" class="input-field" placeholder="Mật Khẩu" aria-label="Mật Khẩu" />
+          
+          <div class="button-container">
+            <button type="submit" class="login-button">Đăng Nhập</button>
+            <div class="register-button-wrapper" tabindex="0" role="button">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c53f9e8f02a546f29e61a3e39206e78b99c9c62abbe867bf1b89e93cb4ea0d2a?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="" class="register-button-background" />
+              <span class="register-button-text">Đăng ký</span>
+            </div>
+          </div>
+        </form>
+        <button class="forgot-password">Quên Mật Khẩu</button>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd7e2e48e0447a78f13b37bef12318294b12af8fc192ac6d1330807bf44c6e88?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="" class="footer-image" />
+      </div>
+    </section>

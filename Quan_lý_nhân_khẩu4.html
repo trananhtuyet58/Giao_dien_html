@@ -1,0 +1,155 @@
+<style>
+    .temporary-residence {
+      background-color: rgba(52, 211, 219, 0.12);
+      display: flex;
+      max-width: 480px;
+      width: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: start;
+      margin: 0 auto;
+      padding: 0 27px 0 13px;
+    }
+    
+    .header {
+      display: flex;
+      gap: 44px;
+      color: #000;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .header-icon {
+      aspect-ratio: 1.11;
+      object-fit: contain;
+      object-position: center;
+      width: 50px;
+    }
+    
+    .header-title {
+      margin: auto 0;
+    }
+    
+    .input-field {
+      border-radius: 8px;
+      background-color: #fff;
+      margin-top: 36px;
+      overflow: hidden;
+      color: #000;
+      padding: 9px 11px;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .input-container {
+      border-radius: 8px;
+      background-color: #fff;
+      align-self: stretch;
+      display: flex;
+      margin-top: 14px;
+      width: 100%;
+      height: 47px;
+    }
+    
+    .wide-input {
+      width: 250px;
+      max-width: 100%;
+    }
+    
+    .note-input {
+      padding: 19px 21px 0;
+    }
+    
+    .archive-list {
+      margin-top: 14px;
+    }
+    
+    .icon-container {
+      align-self: center;
+      display: flex;
+      margin-top: 14px;
+      width: 100%;
+      max-width: 360px;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    
+    .icon {
+      object-fit: contain;
+      object-position: center;
+    }
+    
+    .icon-1 {
+      aspect-ratio: 0.98;
+      width: 58px;
+      align-self: start;
+      margin-top: 4px;
+    }
+    
+    .icon-2 {
+      aspect-ratio: 1.18;
+      width: 74px;
+    }
+    
+    .icon-3 {
+      aspect-ratio: 1.36;
+      width: 68px;
+      margin: auto 0;
+    }
+    
+    .icon-4 {
+      aspect-ratio: 1.12;
+      width: 63px;
+      align-self: start;
+      margin-top: 7px;
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    </style>
+    
+    <section class="temporary-residence">
+      <header class="header">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1357b8fe9dfbeb24e5e85277a3b6717ad09fda07f7a06d7340ef47635f9070e?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="" class="header-icon" />
+        <h1 class="header-title">Tạm trú tạm vắng</h1>
+      </header>
+      
+      <form>
+        <label for="tempResidenceId" class="visually-hidden">ID Tạm trú tạm vắng</label>
+        <input type="text" id="tempResidenceId" class="input-field" placeholder="ID Tạm trú tạm vắng" />
+        <div class="input-container"></div>
+        
+        <label for="personId" class="visually-hidden">ID_Nhân khẩu</label>
+        <input type="text" id="personId" class="input-field wide-input" placeholder="ID_Nhân khẩu" />
+        <div class="input-container"></div>
+        
+        <label for="documentType" class="visually-hidden">Loại giấy tờ</label>
+        <input type="text" id="documentType" class="input-field wide-input" placeholder="Loại giấy tờ" />
+        <div class="input-container"></div>
+        
+        <label for="duration" class="visually-hidden">Thời hạn</label>
+        <input type="text" id="duration" class="input-field wide-input" placeholder="Thời hạn" />
+        <div class="input-container"></div>
+        
+        <label for="notes" class="visually-hidden">Ghi chú (Nếu có)</label>
+        <textarea id="notes" class="input-field note-input" placeholder="Ghi chú (Nếu có)"></textarea>
+        <div class="input-container"></div>
+        
+        <label for="archiveList" class="visually-hidden">Danh sách lưu trữ</label>
+        <input type="text" id="archiveList" class="input-field archive-list" placeholder="Danh sách lưu trữ" />
+      </form>
+      
+      <div class="icon-container">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/048162f37f7637ebea7051f5217796e770b030629531feadc47a8c357ddad517?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="" class="icon icon-1" />
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/96a3e12a50e62ca15f815e0b8a10a3a859aa3578349d8bb7a13c508c303d3ee3?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="" class="icon icon-2" />
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6efc870808c78158f1bfd38c5b4bfa1e23800f2f173d5ddfd5219ee6b01d3178?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="" class="icon icon-3" />
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/239f6e2ba55e96ffc9f75a37035db7a6e5c7745ad7809ff7be4721cb48b98c73?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="" class="icon icon-4" />
+      </div>
+    </section>

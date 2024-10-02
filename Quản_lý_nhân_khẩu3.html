@@ -1,0 +1,209 @@
+<style>
+    .user-management {
+      background-color: rgba(52, 211, 219, 0.12);
+      display: flex;
+      max-width: 480px;
+      width: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: start;
+      margin: 0 auto;
+      padding: 0 14px 52px 7px;
+    }
+    
+    .header {
+      align-self: stretch;
+      gap: 20px;
+      display: flex;
+    }
+    
+    @media (max-width: 991px) {
+      .header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    }
+    
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 16%;
+      margin-left: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .logo-container {
+        width: 100%;
+      }
+    }
+    
+    .logo-wrapper {
+      display: flex;
+      margin-top: 12px;
+      flex-grow: 1;
+      flex-direction: column;
+    }
+    
+    .logo-small {
+      aspect-ratio: 0.86;
+      object-fit: contain;
+      object-position: center;
+      width: 42px;
+    }
+    
+    .logo-large {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 56px;
+      margin-top: 12px;
+    }
+    
+    .title-container {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 66%;
+      margin-left: 20px;
+    }
+    
+    @media (max-width: 991px) {
+      .title-container {
+        width: 100%;
+      }
+    }
+    
+    .main-title {
+      color: #000;
+      margin-top: 87px;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .profile-container {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 18%;
+      margin-left: 20px;
+    }
+    
+    @media (max-width: 991px) {
+      .profile-container {
+        width: 100%;
+      }
+    }
+    
+    .profile-image {
+      aspect-ratio: 0.84;
+      object-fit: contain;
+      object-position: center;
+      width: 61px;
+    }
+    
+    .menu-item {
+      display: flex;
+      margin-top: 48px;
+      gap: 27px;
+      color: #000;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .menu-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 56px;
+    }
+    
+    .menu-text {
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    
+    .footer {
+      display: flex;
+      margin-top: 471px;
+      width: 100%;
+      max-width: 387px;
+      gap: 20px;
+      color: #000;
+      justify-content: space-between;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .logout-wrapper {
+      display: flex;
+      gap: 27px;
+      margin: auto 0;
+    }
+    
+    .logout-icon {
+      aspect-ratio: 1.14;
+      object-fit: contain;
+      object-position: center;
+      width: 49px;
+    }
+    
+    .logout-text {
+      align-self: start;
+      margin-top: 14px;
+      flex-basis: auto;
+    }
+    
+    .footer-logo {
+      aspect-ratio: 0.86;
+      object-fit: contain;
+      object-position: center;
+      width: 61px;
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    </style>
+    
+    <section class="user-management">
+      <header class="header">
+        <div class="logo-container">
+          <div class="logo-wrapper">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a02cdae094aa4c688b7193aa7a5994c63caf2f3a141b7e5caa518fb639aec9a?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="logo-small" alt="" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6af626bf4e058aee9c77d8b031d3178afdc96620b710c34b7264622fee1ce7db?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="logo-large" alt="" />
+          </div>
+        </div>
+        <div class="title-container">
+          <h1 class="main-title">Quản Lý Nhân Khẩu</h1>
+        </div>
+        <div class="profile-container">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/fb861c81ff16463bdced59a78ee33cad2868836c5dd94e4d7675a959dcd62ba6?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="profile-image" alt="User profile" />
+        </div>
+      </header>
+      
+      <nav>
+        <div class="menu-item">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6af626bf4e058aee9c77d8b031d3178afdc96620b710c34b7264622fee1ce7db?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="menu-icon" alt="" />
+          <span class="menu-text">Quản Lý Hộ Khẩu</span>
+        </div>
+        <div class="menu-item">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6af626bf4e058aee9c77d8b031d3178afdc96620b710c34b7264622fee1ce7db?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="menu-icon" alt="" />
+          <span class="menu-text">Quản Lý Tạm Trú/ Tạm Vắng</span>
+        </div>
+      </nav>
+      
+      <footer class="footer">
+        <div class="logout-wrapper">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/833859ec98947df91b9924463b4f511822a84e0093dddda3cb01aea4fe284ce2?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="logout-icon" alt="" />
+          <span class="logout-text">Đăng Xuất</span>
+        </div>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a76428ec3538c8dce0b491999f6be6f1d21e44ada43ecea5efa0abc55b57a8f?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" class="footer-logo" alt="" />
+      </footer>
+    </section>

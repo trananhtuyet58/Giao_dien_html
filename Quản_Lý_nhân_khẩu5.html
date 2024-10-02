@@ -1,0 +1,264 @@
+<style>
+    .resident-management {
+      background-color: rgba(52, 211, 219, 0.2);
+      display: flex;
+      max-width: 480px;
+      width: 100%;
+      padding: 0 0 6px;
+      flex-direction: column;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    
+    .header {
+      display: flex;
+      width: 100%;
+      max-width: 405px;
+      gap: 40px 70px;
+      color: #000;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .title-wrapper {
+      align-self: start;
+      display: flex;
+      gap: 9px;
+      flex-grow: 1;
+    }
+    
+    .icon {
+      aspect-ratio: 1.11;
+      object-fit: contain;
+      object-position: center;
+      width: 50px;
+    }
+    
+    .title {
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    
+    .settings-icon {
+      aspect-ratio: 0.77;
+      object-fit: contain;
+      object-position: center;
+      width: 44px;
+    }
+    
+    .form-container {
+      display: flex;
+      margin-top: 15px;
+      width: 100%;
+      flex-direction: column;
+      align-items: start;
+      padding: 0 25px 0 11px;
+    }
+    
+    .form-row {
+      display: flex;
+      gap: 23px;
+    }
+    
+    .form-column {
+      display: flex;
+      flex-direction: column;
+      color: #000;
+      font: 400 12px Inter, sans-serif;
+    }
+    
+    .form-field {
+      background-color: #fff;
+      overflow: hidden;
+      padding: 5px 18px;
+    }
+    
+    .form-input {
+      transform: rotate(3.141592653589793rad);
+      background-color: #fff;
+      display: flex;
+      margin-top: 14px;
+      width: 134px;
+      height: 30px;
+    }
+    
+    .form-input-group {
+      background-color: #fff;
+      display: flex;
+      margin-top: 16px;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: start;
+      padding: 8px 20px;
+    }
+    
+    .form-label {
+      z-index: 10;
+      margin-top: -15px;
+    }
+    
+    .form-input-column {
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .form-input-field {
+      background-color: #fff;
+      display: flex;
+      height: 25px;
+      margin-top: 14px;
+    }
+    
+    .form-row-spaced {
+      display: flex;
+      margin-top: 13px;
+      align-items: start;
+      gap: 25px;
+      color: #000;
+      font: 400 12px Inter, sans-serif;
+    }
+    
+    .form-input-wide {
+      background-color: #fff;
+      display: flex;
+      margin-top: 4px;
+      width: 231px;
+      height: 32px;
+    }
+    
+    .form-actions {
+      align-self: center;
+      display: flex;
+      margin-top: 24px;
+      width: 100%;
+      max-width: 319px;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    
+    .action-button {
+      aspect-ratio: 1.17;
+      object-fit: contain;
+      object-position: center;
+      width: 55px;
+      margin: auto 0;
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    </style>
+    
+    <section class="resident-management">
+      <header class="header">
+        <div class="title-wrapper">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1357b8fe9dfbeb24e5e85277a3b6717ad09fda07f7a06d7340ef47635f9070e?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="Resident Management Icon" class="icon" />
+          <h1 class="title">Quản Lý Nhân Khẩu</h1>
+        </div>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2192d79fa9512103a28a8b2b84102b603f12dfc2b3cbbba768bee4bbdcf504f0?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="Settings" class="settings-icon" />
+      </header>
+      
+      <form class="form-container">
+        <div class="form-row">
+          <div class="form-column">
+            <label for="residentId" class="form-field">ID Nhân Khẩu</label>
+            <input type="text" id="residentId" class="form-input" />
+            <label for="alias" class="form-field">Bí danh ( Nếu có)</label>
+            <div class="form-input-group">
+              <label for="birthDate" class="form-label">Ngày Sinh</label>
+              <input type="date" id="birthDate" class="visually-hidden" />
+            </div>
+          </div>
+          <div class="form-input-column">
+            <input type="text" class="form-input-field" aria-label="Additional Information" />
+            <input type="text" class="form-input-field" aria-label="Additional Information" />
+            <input type="text" class="form-input-field" aria-label="Additional Information" />
+            <input type="text" class="form-input-field" aria-label="Additional Information" />
+          </div>
+        </div>
+        
+        <div class="form-row-spaced">
+          <label for="birthPlace" class="form-field">Nơi Sinh</label>
+          <input type="text" id="birthPlace" class="form-input-wide" />
+        </div>
+        
+        <div class="form-row-spaced">
+          <label for="origin" class="form-field">Nguyên Quán</label>
+          <input type="text" id="origin" class="form-input-wide" />
+        </div>
+        
+        <div class="form-row-spaced">
+          <label for="ethnicity" class="form-field">Dân Tộc</label>
+          <input type="text" id="ethnicity" class="form-input-wide" />
+        </div>
+        
+        <div class="form-row-spaced">
+          <label for="occupation" class="form-field">Nghề Nghiệp</label>
+          <input type="text" id="occupation" class="form-input-wide" />
+        </div>
+        
+        <div class="form-row">
+          <div class="form-column">
+            <label for="workplace" class="form-field">Nơi làm việc</label>
+            <label for="idNumber" class="form-field">SốCMND_CCCD</label>
+          </div>
+          <div class="form-input-column">
+            <input type="text" id="workplace" class="form-input-field" />
+            <input type="text" id="idNumber" class="form-input-field" />
+          </div>
+        </div>
+        
+        <div class="form-row-spaced">
+          <label for="issueDate" class="form-field">Ngày cấp</label>
+          <input type="date" id="issueDate" class="form-input-wide" />
+        </div>
+        
+        <div class="form-row-spaced">
+          <label for="issuePlace" class="form-field">Nơi cấp</label>
+          <input type="text" id="issuePlace" class="form-input-wide" />
+        </div>
+        
+        <div class="form-row-spaced">
+          <label for="registrationDate" class="form-field">Ngày đăng ký thường trú</label>
+          <input type="date" id="registrationDate" class="form-input-wide" />
+        </div>
+        
+        <div class="form-row-spaced">
+          <label for="previousAddress" class="form-field">Đại chỉ trước đây</label>
+          <input type="text" id="previousAddress" class="form-input-wide" />
+        </div>
+        
+        <div class="form-row-spaced">
+          <label for="relationToHead" class="form-field">Quan hệ vs chủ hộ</label>
+          <input type="text" id="relationToHead" class="form-input-wide" />
+        </div>
+        
+        <div class="form-row-spaced">
+          <label for="householdId" class="form-field">ID Hộ Khẩu</label>
+          <input type="text" id="householdId" class="form-input-wide" />
+        </div>
+      </form>
+      
+      <div class="form-actions">
+        <button class="action-button">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f03c9e9c1aaf582504a6e3da772e4229755567f2786072cd389621250dfe704d?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="Action 1" />
+        </button>
+        <button class="action-button">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3adb5c746eb0503000ce71ed592a5a45e1ac4392bb923cf8ac3bebb890854707?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="Action 2" />
+        </button>
+        <button class="action-button">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/163ca7627204e30bbd35530370b5af2d7755262c762aa57ed57d05aac0100838?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="Action 3" />
+        </button>
+        <button class="action-button">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a3701256318ffafaae40e230b9f4925d1750b9b29008aaa7c451c553fe95431f?placeholderIfAbsent=true&apiKey=b1d654b7df8644ac8f028fc76fe19aad" alt="Action 4" />
+        </button>
+      </div>
+    </section>
